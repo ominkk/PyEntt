@@ -7,7 +7,7 @@ name = "entt"
 version = "0.1.0"
 description = "Python bindings for EnTT - A high-performance Entity Component System library"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 authors = [{ name = "ominkk" }]
 
 [project.urls]
@@ -31,8 +31,8 @@ cmake.build-type = "Release"
 # Setuptools-style build caching in a local directory
 build-dir = "build/{wheel_tag}"
 
-# Build stable ABI wheels for CPython 3.10+
-wheel.py-api = "cp310"
+# Build stable ABI wheels for CPython 3.12+
+wheel.py-api = "cp312"
 
 [tool.pytest.ini_options]
 
