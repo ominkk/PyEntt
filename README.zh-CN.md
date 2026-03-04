@@ -28,7 +28,7 @@ pip install entt
 或从源码安装：
 
 ```bash
-git clone https://github.com/your-username/PyEnTT.git
+git clone https://github.com/ominkk/PyEnTT.git
 cd PyEnTT
 
 # 使用 pip
@@ -115,7 +115,7 @@ storage.on_construct(lambda entity: print(f"创建了 {entity}"))
 
 ## 文档
 
-更详细的文档、示例和 API 参考，请访问我们的[文档](https://github.com/your-username/PyEnTT#readme)。
+更详细的文档、示例和 API 参考，请访问我们的[文档](https://github.com/ominkk/PyEnTT#readme)。
 
 ## 测试
 
@@ -153,4 +153,4 @@ uv pip install -e .
 
 - [EnTT 文档](https://skypjack.github.io/entt/)
 - [Python 包索引 (PyPI)](https://pypi.org/project/entt/)
-- [问题追踪](https://github.com/your-username/PyEnTT/issues)
+- [问题追踪](https://github.com/ominkk/PyEnTT/issues)

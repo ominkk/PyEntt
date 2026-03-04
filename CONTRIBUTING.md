@@ -33,7 +33,7 @@ By participating in this project, you agree to abide by our Code of Conduct:
 1. **Fork and Clone**
 
    ```bash
-   git clone https://github.com/your-username/PyEnTT.git
+   git clone https://github.com/ominkk/PyEnTT.git
    cd PyEnTT
    ```
 
@@ -213,8 +213,8 @@ By contributing to PyEnTT, you agree that your contributions will be licensed un
 
 If you need help:
 - Check the [documentation](README.md)
-- Search [existing issues](https://github.com/your-username/PyEnTT/issues)
-- Ask in [GitHub Discussions](https://github.com/your-username/PyEnTT/discussions)
+- Search [existing issues](https://github.com/ominkk/PyEnTT/issues)
+- Ask in [GitHub Discussions](https://github.com/ominkk/PyEnTT/discussions)
 - Contact maintainers via issue tracker
 
 Thank you for contributing to PyEnTT! 🎉

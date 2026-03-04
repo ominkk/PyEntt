@@ -28,7 +28,7 @@ pip install entt
 Or install from source:
 
 ```bash
-git clone https://github.com/your-username/PyEnTT.git
+git clone https://github.com/ominkk/PyEnTT.git
 cd PyEnTT
 
 # Using pip
@@ -115,7 +115,7 @@ storage.on_construct(Position)
 
 ## Documentation
 
-For more detailed documentation, examples, and API reference, please visit our [documentation](https://github.com/your-username/PyEnTT#readme).
+For more detailed documentation, examples, and API reference, please visit our [documentation](https://github.com/ominkk/PyEnTT#readme).
 
 ## Testing
 
@@ -153,4 +153,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [EnTT Documentation](https://skypjack.github.io/entt/)
 - [Python Package Index (PyPI)](https://pypi.org/project/entt/)
-- [Issue Tracker](https://github.com/your-username/PyEnTT/issues)
+- [Issue Tracker](https://github.com/ominkk/PyEnTT/issues)
