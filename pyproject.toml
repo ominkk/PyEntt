@@ -11,17 +11,13 @@ requires-python = ">=3.12"
 authors = [{ name = "ominkk" }]
 
 [project.urls]
-Homepage = "https://github.com/your-username/PyEnTT"
-Documentation = "https://github.com/your-username/PyEnTT#readme"
-Repository = "https://github.com/your-username/PyEnTT"
-Issues = "https://github.com/your-username/PyEnTT/issues"
+Homepage = "https://github.com/ominkk/PyEnTT"
+Documentation = "https://github.com/ominkk/PyEnTT#readme"
+Repository = "https://github.com/ominkk/PyEnTT"
+Issues = "https://github.com/ominkk/PyEnTT/issues"
 
 [dependency-groups]
 dev = ["pytest"]
-
-[[tool.uv.index]]
-url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
-default = true
 
 [tool.scikit-build]
 # Protect the configuration against future changes in scikit-build-core
