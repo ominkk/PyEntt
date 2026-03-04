@@ -6,6 +6,9 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](tests/)
 
+> **⚠️ 开发警告**  
+> 本绑定目前处于开发阶段，未完全提供原始 EnTT 库的所有功能。Python API 根据Python语言特性进行设计，与 C++ 接口可能存在差异。
+
 [EnTT](https://github.com/skypjack/entt) 的 Python 绑定 - 一个用于游戏开发和实时应用的高性能实体组件系统（ECS）库。
 
 ## 特性

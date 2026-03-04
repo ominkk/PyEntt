@@ -6,6 +6,9 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](tests/)
 
+> **⚠️ Development Warning**  
+> This binding is currently under development and does not provide all features of the original EnTT library. The Python API is designed according to Python characteristics and may differ from the C++ interface.
+
 Python bindings for [EnTT](https://github.com/skypjack/entt) - A high-performance Entity Component System library for game development and real-time applications.
 
 ## Features
