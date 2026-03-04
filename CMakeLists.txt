@@ -35,8 +35,8 @@ if (NOT SKBUILD)
 endif()
 
 find_package(Python 3.10
-  REQUIRED COMPONENTS Interpreter Development
-  OPTIONAL_COMPONENTS Development.SABIModule)
+  REQUIRED COMPONENTS Interpreter
+  OPTIONAL_COMPONENTS Development Development.SABIModule)
 
 # Import nanobind through CMake's find_package mechanism
 find_package(nanobind CONFIG REQUIRED)
@@ -49,7 +49,10 @@ nanobind_add_module(
   src/registry_wrapper.cpp
 )
 
-target_link_libraries(_entt PRIVATE EnTT Python::Python)
+target_link_libraries(_entt PRIVATE EnTT)
+if(TARGET Python::Python)
+  target_link_libraries(_entt PRIVATE Python::Python)
+endif()
 
 # 在Linux平台下添加静态链接GCC和C++标准库的选项
 if(UNIX AND NOT APPLE)
