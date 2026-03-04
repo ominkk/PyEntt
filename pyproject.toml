@@ -11,7 +11,7 @@ before-build = "pip install uv"
 
 [project]
 name = "entt"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python bindings for EnTT - A high-performance Entity Component System library"
 readme = "README.md"
 requires-python = ">=3.12"
