@@ -2,6 +2,13 @@
 requires = ["scikit-build-core >=0.10", "nanobind >=1.3.2"]
 build-backend = "scikit_build_core.build"
 
+[tool.cibuildwheel]
+build = "cp312-*"
+skip = "*-musllinux_*"
+manylinux-x86_64-image = "manylinux2014"
+archs = ["x86_64"]
+before-build = "pip install uv"
+
 [project]
 name = "entt"
 version = "0.1.0"

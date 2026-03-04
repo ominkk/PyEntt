@@ -11,6 +11,13 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
+        include:
+          - os: ubuntu-latest
+            use-cibuildwheel: true
+          - os: macos-latest
+            use-cibuildwheel: false
+          - os: windows-latest
+            use-cibuildwheel: false
 
     runs-on: ${{ matrix.os }}
 
@@ -28,7 +35,20 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v5
 
-      - name: Build wheels
+      - name: Build wheels with cibuildwheel
+        if: matrix.use-cibuildwheel
+        uses: pypa/cibuildwheel@v2.22.0
+        env:
+          CIBW_BUILD: cp312-*
+          CIBW_SKIP: "*-musllinux_*"
+          CIBW_ARCHS_LINUX: x86_64
+          CIBW_MANYLINUX_X86_64_IMAGE: manylinux2014
+          CIBW_BEFORE_BUILD: |
+            pip install uv
+          CIBW_BUILD_VERBOSITY: 1
+
+      - name: Build wheels with uv
+        if: "!matrix.use-cibuildwheel"
         run: |
           uv build --wheel --out-dir dist
 
