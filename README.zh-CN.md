@@ -2,7 +2,7 @@
 
 **English | [简体中文](README.zh-CN.md)**
 
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](tests/)
 
@@ -14,7 +14,7 @@
 - **ECS 架构**: 实体-组件-系统，支持灵活的游戏设计
 - **类型安全**: 完整的 Python 类型提示支持
 - **跨平台**: 支持 Linux、macOS 和 Windows
-- **Python 3.10+**: Stable ABI wheels，广泛兼容
+- **Python 3.12+**: Stable ABI wheels，广泛兼容
 - **现代 Python**: 使用 nanobind 实现高效绑定
 
 ## 安装
@@ -30,12 +30,17 @@ pip install entt
 ```bash
 git clone https://github.com/your-username/PyEnTT.git
 cd PyEnTT
+
+# 使用 pip
 pip install .
+
+# 或使用 uv（推荐）
+uv pip install -e .
 ```
 
 ## 系统要求
 
-- Python 3.10 或更高版本
+- Python 3.12 或更高版本
 - C++17 兼容的编译器（GCC 7+、Clang 5+、MSVC 2017+）
 
 ## 快速开始
@@ -123,11 +128,11 @@ pytest
 ## 从源码构建
 
 ```bash
-# 安装构建依赖
-pip install nanobind scikit-build-core
+# 使用 uv 安装构建依赖
+uv sync
 
 # 构建并安装
-pip install -e .
+uv pip install -e .
 ```
 
 ## 贡献

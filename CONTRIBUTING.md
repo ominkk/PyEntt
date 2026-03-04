@@ -23,7 +23,7 @@ By participating in this project, you agree to abide by our Code of Conduct:
 
 ### Prerequisites
 
-- Python 3.10 or higher
+- Python 3.12 or higher
 - C++17 compatible compiler (GCC 7+, Clang 5+, MSVC 2017+)
 - Git
 - uv (Python package manager)

@@ -2,7 +2,7 @@
 
 **[简体中文](README.zh-CN.md) | English**
 
-[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](tests/)
 
@@ -14,7 +14,7 @@ Python bindings for [EnTT](https://github.com/skypjack/entt) - A high-performanc
 - **ECS Architecture**: Entity-Component-System for flexible game design
 - **Type Safety**: Full Python type hints support
 - **Cross-Platform**: Supports Linux, macOS, and Windows
-- **Python 3.10+**: Stable ABI wheels for wide compatibility
+- **Python 3.12+**: Stable ABI wheels for wide compatibility
 - **Modern Python**: Uses nanobind for efficient bindings
 
 ## Installation
@@ -30,12 +30,17 @@ Or install from source:
 ```bash
 git clone https://github.com/your-username/PyEnTT.git
 cd PyEnTT
+
+# Using pip
 pip install .
+
+# Or using uv (recommended)
+uv pip install -e .
 ```
 
 ## Requirements
 
-- Python 3.10 or higher
+- Python 3.12 or higher
 - C++17 compatible compiler (GCC 7+, Clang 5+, MSVC 2017+)
 
 ## Quick Start
@@ -123,11 +128,11 @@ pytest
 ## Building from Source
 
 ```bash
-# Install build dependencies
-pip install nanobind scikit-build-core
+# Install build dependencies using uv
+uv sync
 
 # Build and install
-pip install -e .
+uv pip install -e .
 ```
 
 ## Contributing
